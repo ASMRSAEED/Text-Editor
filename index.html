@@ -22,10 +22,10 @@
                 <a href="#"><i id="text-underline" class="fa-solid fa-underline"></i></a>
             </div>
             <div class="flex-1 text-2xl">
-                <a class="px-3" href="#"><i class="fa-solid fa-align-left"></i></a>
-                <a href="#"><i class="fa-solid fa-align-center"></i></a>
-                <a class="px-3" href="#"><i class="fa-solid fa-align-right"></i></a>
-                <a href="#"><i class="fa-solid fa-align-justify"></i></a>
+                <a id="text-left" class="px-3" href="#"><i class="fa-solid fa-align-left"></i></a>
+                <a id="text-center" href="#"><i class="fa-solid fa-align-center"></i></a>
+                <a id="text-right" class="px-3" href="#"><i class="fa-solid fa-align-right"></i></a>
+                <a id="text-justify" href="#"><i class="fa-solid fa-align-justify"></i></a>
             </div>
             <div class="flex-1 text-xl">
                 <input class="w-12 rounded" type="number" name="" id="">
@@ -55,12 +55,32 @@
             inputField.classList.add('underline')
         })
 
+        document.getElementById('text-left').addEventListener('click', function () {
+            const inputField = document.getElementById('text-input');
+            inputField.classList.add('text-left')
+        })
+
+        document.getElementById('text-center').addEventListener('click', function () {
+            const inputField = document.getElementById('text-input');
+            inputField.classList.add('text-center')
+        })
+
+        document.getElementById('text-right').addEventListener('click', function () {
+            const inputField = document.getElementById('text-input');
+            inputField.classList.add('text-right')
+        })
+
+        document.getElementById('text-justify').addEventListener('click', function () {
+            const inputField = document.getElementById('text-input');
+            inputField.classList.add('text-justify')
+        })
 
 
 
 
 
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
